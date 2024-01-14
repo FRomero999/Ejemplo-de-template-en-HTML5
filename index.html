@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Carga de tabla de forma dinámica</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+
+        <h1>Listado de videojuegos</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Año</th>
+                    <th>Plataformas</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tbody>
+                    <template>
+                        <tr>
+                            <td class="nombre"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </template>
+                </tbody>
+            </tbody>
+        </table>
+
+        <form>
+            <h2>Nuevo juego</h2>
+            <input type="text" placeholder="Nombre del juego" name="nombre">
+            <input type="number" placeholder="2023" name="año" value="2023" min="1980" max="2023">
+            <input type="text" placeholder="Plataformas" name="plataforma">
+            <textarea name="descripcion" placeholder="Una breve descripcion"></textarea>
+            <input type="submit" value="Añadir a la tabla">
+        </form>
+
+        <script src="static/app.js" type="module"></script>
+
+</body>
+</html>

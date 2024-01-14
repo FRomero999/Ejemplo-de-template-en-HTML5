@@ -1,0 +1,57 @@
+html {
+  font-family: sans-serif;
+  background: linear-gradient(33deg, blue, navy);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "formulario titulo" "formulario tabla";
+  align-items: center;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  grid-area: titulo;
+}
+
+table {
+  grid-area: tabla;
+  border-collapse: collapse;
+  max-width: 60rem;
+  margin: 1rem;
+}
+table td, table th {
+  border: solid 1px white;
+  padding: 0.5rem 1rem;
+}
+table tr:hover {
+  background-color: pink;
+  color: blue;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+table td.nombre {
+  font-weight: bold;
+}
+
+form {
+  grid-area: formulario;
+  background-color: gray;
+  justify-self: stretch;
+  align-self: stretch;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font: size 1.5rem;
+}
+form input {
+  padding: 0.5rem;
+}/*# sourceMappingURL=style.css.map */
