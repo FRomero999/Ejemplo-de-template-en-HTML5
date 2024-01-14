@@ -1,1 +1,1 @@
-#Ejemplo de uso de <template>
+# Ejemplo de uso de template
