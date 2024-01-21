@@ -1,4 +1,4 @@
- export const data = [
+ export var data = [
     { 
         nombre: "Cyberpunk 2077", 
         año: 2020, 

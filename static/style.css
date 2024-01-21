@@ -41,7 +41,7 @@ table td.nombre {
   font-weight: bold;
 }
 
-form {
+body > form {
   grid-area: formulario;
   background-color: gray;
   justify-self: stretch;
@@ -52,6 +52,6 @@ form {
   gap: 0.5rem;
   font: size 1.5rem;
 }
-form input {
+body > form input, body > form button {
   padding: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

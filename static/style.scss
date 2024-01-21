@@ -46,7 +46,7 @@ table{
     }
 }
 
-form{
+body>form{
     grid-area: formulario;
     background-color: gray;
     justify-self: stretch;
@@ -57,7 +57,7 @@ form{
     gap:0.5rem;
     font: size 1.5rem;
     
-    input{
+    input, button{
         padding:0.5rem;
     }
 }

@@ -9,6 +9,14 @@
 
 <body>
 
+        <dialog>
+            <h3></h3>
+            <p></p>
+            <form method="dialgo">
+                <button>Cerrar</button>
+            </form>
+        </dialog>
+
         <h1>Listado de videojuegos</h1>
         <table>
             <thead>
@@ -17,6 +25,7 @@
                     <th>Año</th>
                     <th>Plataformas</th>
                     <th>Descripción</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -27,6 +36,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td><button data-pos="">Ver</button></td>
                         </tr>
                     </template>
                 </tbody>
@@ -40,6 +50,9 @@
             <input type="text" placeholder="Plataformas" name="plataforma">
             <textarea name="descripcion" placeholder="Una breve descripcion"></textarea>
             <input type="submit" value="Añadir a la tabla">
+            <button id="btnjson">Añade Json</button>
+            <button id="btnguardar">Guardar en local</button>
+            <button id="btncargar">Cargar desde local</button>
         </form>
 
         <script src="static/app.js" type="module"></script>
